@@ -19,7 +19,7 @@ Some implementation notes/tips:
 * System calls that manipulate files (such as `rename`, `mkdir`, `chmod`, or `unlink`) don’t necessarily have direct output but instead affect the specified file or folder. These can be “no news is good news” programs, but do display a message if an error is detected. You can examine the affected file(s) or folder(s) to see if your system call worked.
 * Remember that you are supposed to invoke the system call _directly_, not through C. If your code doesn’t have the `syscall` instruction, then you’re doing it wrong.
 * One system call is off-the-table: `chdir`. Calling this in a separate program won’t work as you expect. You’ll see why when you learn about process management in Operating Systems. `write` and `exit` are also off the table for (I hope) obvious reasons. However, you may use these system calls in supporting roles.
-* Yes there are `reboot` and `shutdown` system calls. They do what they say, so save your work if you want to try invoking these.
+* Yes there is a `reboot` system call. It does what it says, so save your work if you want to try invoking it.
 * If you decide to use a system call that delivers its results to a block of memory that you supply, it will be easier to just use `resb` in the `.data` section to pre-allocate space rather than to dynamically allocate memory via `malloc`.
 
 ## How to Turn it In
