@@ -10,9 +10,10 @@ You have seen examples for `write` and `exit`—there’s lots more you can do!
 
 ## For Submission: System Call Me Maybe
 
-Examine the aforementioned lists of 64-bit Linux system calls and pick a system call that you find interesting. Implement an assembly language program that invokes that system call and displays appropriate message or output. This is pretty much how Linux operating system commands are implemented!
+Examine the aforementioned lists of 64-bit Linux system calls and pick a system call that you find interesting. Implement an assembly language program that invokes that system call using any applicable command-line arguments and displays appropriate message or output. This is pretty much how Linux operating system commands are implemented!
 
 Some implementation notes/tips:
+* Nearly all system calls require some set of parameters so you will want to link with `gcc` in order to have easy access to `argc` and `argv` as usual, as well as library functions like `atoi`, `puts`, and `printf`. Be cognizant of the system call parameters’ data types (`int`, `char*`, etc.).
 * Keep things simple. Some system calls return complex structures—great information and definitely interesting, but likely over your head.
 * Choose something whose result is easily demonstrable, such as easily verifiable information or concrete, tangible results (like those mentioned in the next item).
 * System calls that manipulate files (such as `rename`, `mkdir`, `chmod`, or `unlink`) don’t necessarily have direct output but instead affect the specified file or folder. These can be “no news is good news” programs, but do display a message if an error is detected. You can examine the affected file(s) or folder(s) to see if your system call worked.
