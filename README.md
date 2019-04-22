@@ -11,4 +11,5 @@ This repository hosts a public copy of the assignment write-ups for this course 
 - [Assignment 0404](./from-c-to-shining-c.md) C programs 2: “From C to Shining C”
 - [Assignment 0416](./dejassembly-vu.md) Assembly language programs 1: “Déjàssembly Vu”
 - [Assignment 0425](./system-call-me-maybe.md) Assembly language programs 2: “System Call Me Maybe”
-- **Assignment 0507** Mixed language programs
+- [Assignment 0507](./welcome-to-the-o-c.md) Mixed language programs: “Welcome to the _.o_, C”
+- [Make-Up Work 0510](./play-it-again-asm.md) Make-up work (not for everyone): “Play It Again, _.asm_”
